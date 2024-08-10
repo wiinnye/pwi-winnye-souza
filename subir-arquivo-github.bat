@@ -3,7 +3,7 @@ echo OFF
 echo --- Subir arquivo para o GitHUB ----
 echo
 git add .
-git commit -m "comentario aqui"
+git commit -m "retirando usuario github"
 git push 
 echo
 echo --- Fim ---
