@@ -5,29 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Bon Appétit</title>
+    <style>
+        .div_header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu_header{
+            display: flex;
+        }
+        .menu_header_table{
+            width: 100%;
+            padding: 20px;
+            color: aliceblue;
+            margin-top: 40px;
+            background-color: #4682B4;
+        }
+        .div_historia_restaurante{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding-bottom: 80px;
+            background-color: LightSteelBlue;
+        }
+        .div_cardapio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .div_cardapio table {
+            width: 100%;   
+        }
+        .cardapio_table td, .div_vinhos{
+            padding: 10px;
+        }
+        .div_vinhos{
+            display: flex;
+            flex-direction: column;
+        }
+       .div_unidades{
+        display: flex;
+        flex-direction: column;
+       }
+       .div_rodape{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 30px;
+       }
+       .div_app{
+        display: flex;
+        justify-content: flex-start;
+       }
+       .div_conteudos{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px;
+        background-color: #4682B4;
+       }
+       .div_conteudos ul {
+        list-style: none;
+        text-align: start;
+       }
+       .div_conteudos li {
+        padding: 10px;
+        color: #fff;
+       }
+       .li_titulo{
+        font-size: 20px;
+        font-weight: bold;
+       }
+    </style>
 </head>
 
-<body style="background-color: aliceblue; text-align: center;">
+<body style="background-color: #F0F8FF; text-align: center;">
     <!-- Menu -->
-    <div>
-
-        <h1
-            style="color: rgb(40, 43, 226);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 60px;">
-            <img src="/images/logoRestaurante.png" alt="logo do restaurante"
-                style="width: 200px; height: 200px;border-radius:50%;">
-            Bon Appétit, <sup>Gusteau</sup>!
-        </h1>
-        <img src="/images/bannerRatatouille.webp" alt="foto de comida"
-            style="width: 1000px; height: 400px;margin: 20px;">
+    <div class="div_header">
+        <img src="/images/logoRestaurante.png" alt="logo do restaurante" style="width: 80px; height: 80px;border-radius:50%;">
+        <h1 style="color: rgb(23, 23, 24);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 30px;padding-left: 29px;">  Bon Appétit, <sup>Gusteau</sup>!</h1>        
     </div>
-
+    <div class="menu_header">
+        <table class="menu_header_table">
+            <tr>
+                <th style="width: 10%;cursor: pointer;">Home</th>
+                <th style="width: 10%;cursor: pointer;">Nossa História</th>
+                <th style="width: 10%;cursor: pointer;">Cardápio</th>
+                <th style="width: 10%;cursor: pointer;">Vinhos</th>
+                <th style="width: 10%;cursor: pointer;">Rede Social</th>
+            </tr>
+        </table>
+    </div>
+    <img src="/images/bannerRatatouille.webp" alt="foto de comida" style="width: 1000px; height: 400px;margin: 20px;">
 
     <!-- historia do Restaurante -->
-    <div style="margin-top: 10%;">
+    <div class='div_historia_restaurante'>
         <h3 style="font-size: 90px;"> Nossa História</h3>
-        <h2 style="font-size: 20px; margin-top:4%; font-size: 25px;">Melhor comida Francesa do Brasil!</h2>
-        <div style="width: 50%;text-align: center; margin:auto;margin-top: 20px;">
-            <p style="font-size: 20px ; text-align: center;">
+        <h2 style="font-size: 20px; font-size: 25px;">Melhor comida Francesa do Brasil!</h2>
+        <div style="width: 50%;">
+            <p style="font-size: 20px;">
                 Com o simples propósito de oferecer uma refeição francesa inspirada nas clássicas cantinas,
                 a primeira unidade do grupo foi inaugurada no bairro dos X, em São Paulo no ano de 2000.
                 A história do Bon Appétit, Gustaeu, no entanto, começa bem antes da abertura dessa primeira casa.
@@ -57,24 +140,24 @@
         <img src="" alt=""/>
         <li>Macaron</li> -->
         </ol>
-        <div>
-            <table style="margin-left: 5%;">
+        <div class="div_cardapio">
+            <table class="cardapio_table">
                 <tr>
-                    <th style="width: 10%;">Ratatouille</th>
-                    <th style="width: 10%;">Confit de pato</th>
-                    <th style="width: 10%;">Foie Gras</th>
-                    <th style="width: 10%;">Coq au vin</th>
-                </tr>
-                <tr>
-                    <td><img src="/images/RatatouilleCardapio.webp" alt="" style="width: 170px; height: 150px;" /></td>
-                    <td><img src="/images/confit-de-PatoCardapio.jpeg" alt="" style="width: 170px; height: 150px;" />
+                    <td><img src="/images/RatatouilleCardapio.webp" alt="" style="width: 260px; height: 150px;" /></td>
+                    <td><img src="/images/confit-de-PatoCardapio.jpeg" alt="" style="width: 260px; height: 150px;" />
                     </td>
-                    <td><img src="/images/foiecardapio.webp" alt="" style="width: 170px; height: 150px;" /></td>
+                    <td><img src="/images/foiecardapio.webp" alt="" style="width: 260px; height: 150px;" /></td>
                     <td><img src="/images/coq-au-vinCardapio.webp" alt="Coq au vin"
-                            style="width: 170px; height: 150px;" />
+                            style="width: 260px; height: 150px;" />
                     </td>
                 </tr>
                 <tr>
+                    <th style="width: 10%;font-size: 23px;">Ratatouille</th>
+                    <th style="width: 10%;font-size: 23px">Confit de pato</th>
+                    <th style="width: 10%;font-size: 23px">Foie Gras</th>
+                    <th style="width: 10%;font-size: 23px">Coq au vin</th>
+                </tr>
+                <tr style="text-align: start;">
                     <td style="color: rgb(48, 38, 38);">
                         o Ratatouille é um prato clássico da culinária francesa, originário da região da Provença.
                         Feito com uma seleção de legumes frescos e sazonais, como berinjela, abobrinha, pimentão,
@@ -113,42 +196,52 @@
                     <td style="font-weight:bold;">R$189,00</td>
                     <td style="font-weight:bold;">R$139,00</td>
                     <td style="font-weight:bold;">R$209,00</td>
-
                 </tr>
             </table>
         </div>
-        <div>
+        <!-- Vinhos -->
+        <div class="div_vinhos">
             <h3 style="font-size: 90px;">Vinho Importados</h3>
-            <table style="margin-left: 5%;">
+            <table>
                 <tr>
-                    <th style="width: 10%;">Ratatouille</th>
-                    <th style="width: 10%;">Confit de pato</th>
-                    <th style="width: 10%;">Foie Gras</th>
-                    <th style="width: 10%;">Coq au vin</th>
+                  <td><img src="/images/CHÂTEAU HAUT-BRION.png" alt="CHÂTEAU HAUT-BRION" style="width: 200px; height: 300px;"/></td>
+                  <td><img src="/images/CHÂTEAU LAFITE ROTHSCHILD.png" alt="CHÂTEAU LAFITE ROTHSCHILD" style="width: 200px; height: 300px;"/></td>
+                  <td><img src="/images/CHÂTEAU LATOUR.png" alt="CHÂTEAU LATOUR" style="width: 200px; height: 300px;"/></td>
+                  <td><img src="/images/CHÂTEAU MARGAUX.png" alt="CHÂTEAU MARGAUX" style="width: 200px; height: 300px;"/></td>
                 </tr>
-                <!-- <tr>
-            <td><img src="/images/RatatouilleCardapio.webp" alt="" style="width: 170px; height: 150px;"/></td>
-            <td><img src="/images/confit-de-PatoCardapio.jpeg" alt="" style="width: 170px; height: 150px;"/></td>
-            <td><img src="/images/foiecardapio.webp" alt="" style="width: 170px; height: 150px;"/></td>
-            <td><img src="/images/coq-au-vinCardapio.webp" alt="Coq au vin" style="width: 170px; height: 150px;"/></td>
-             </tr> -->
                 <tr>
-                    <td style="font-weight:bold;">R$100,00</td>
-                    <td style="font-weight:bold;">R$189,00</td>
-                    <td style="font-weight:bold;">R$139,00</td>
-                    <td style="font-weight:bold;">R$209,00</td>
-
+                    <th style="width: 10%;font-size: 23px;">CHÂTEAU HAUT-BRION (TINTO)</th>
+                    <th style="width: 10%;font-size: 23px;">CHÂTEAU LAFITE ROTHSCHILD (TINTO)</th>
+                    <th style="width: 10%;font-size: 23px;">CHÂTEAU LATOUR (TINTO)</th>
+                    <th style="width: 10%;font-size: 23px;">CHÂTEAU MARGAUX (TINTO)</th>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">R$19.400,00 (Garrafa)</td>
+                    <td style="font-weight:bold;">R$16.990,00 (Garrafa)</td>
+                    <td style="font-weight:bold;">R$14.990,00 (Garrafa)</td>
+                    <td style="font-weight:bold;">R$20.607,86 (Garrafa)</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold;">R$194,00 (Taça)</td>
+                    <td style="font-weight:bold;">R$169,00 (Taça)</td>
+                    <td style="font-weight:bold;">R$149,00 (Taça)</td>
+                    <td style="font-weight:bold;">R$206,86 (Taça)</td>
                 </tr>
             </table>
         </div>
-
     </div>
 
-
     <!-- Unidades -->
-    <div>
+    <div class="div_unidades">
         <h3 style="font-size: 90px;">Unidades</h3>
-        <table style="margin-left: 5%;">
+        <table>
+
+            <tr>
+                <td><img src="/images/icons8-loja-100.png" alt="loja-logo" style="width: 100px; height: 100px;" /></td>
+                <td><img src="/images/icons8-loja-100.png" alt="loja-logo" style="width: 100px; height: 100px;" /></td>
+                <td><img src="/images/icons8-loja-100.png" alt="loja-logo" style="width: 100px; height: 100px;" /></td>
+                <td><img src="/images/icons8-loja-100.png" alt="loja-logo" style="width: 100px; height: 100px;" /></td>
+            </tr>
             <tr>
                 <th style="width: 10%;">São Paulo </th>
                 <th style="width: 10%;">São Paulo</th>
@@ -161,30 +254,61 @@
                 <td style="color:gray"> Av. Ipanema, 2007 </td>
                 <td style="color:gray"> Rua Copacabana,, 01 </td>
             </tr>
-            <tr>
-                <td><img src="/images/icons8-loja-100.png" alt="loja-logo" style="width: 100px; height: 100px;" /></td>
-                <td><img src="/images/icons8-loja-100.png" alt="loja-logo" style="width: 100px; height: 100px;" /></td>
-                <td><img src="/images/icons8-loja-100.png" alt="loja-logo" style="width: 100px; height: 100px;" /></td>
-                <td><img src="/images/icons8-loja-100.png" alt="loja-logo" style="width: 100px; height: 100px;" /></td>
-            </tr>
 
         </table>
     </div>
 
     <!-- Rodape -->
-    <div>
-        </br>
-        <p>Baixe nosso App Bon Appetit, Gustaeu</p>
-        <span style="color: rgb(122, 114, 114);"> Telefone para Contato: (11) xxxx-xxxx</span>
-        </br>
-        <span style="color: rgb(122, 114, 114);"> Endereço: Av. Paulista, 2000 - São Paulo</span>
-        </br>
-        <p>Siga nas Rede Sociais</p>
-        <img src="" alt="Insta" />
-        <img src="" alt="WhatsApp" />
-        <img src="" alt="Ifood" />
+    <div class="div_rodape">
+        <div class="div_app">
+            <div>
+                <h4 style="text-align: start;font-size: 20px;color: #4682B4;">Já baixou nosso APP?</h4>
+                <p>Baixe agora lendo o QR code ao lado e tenha acesso a preços e promoções exclusivas.</p>
+            </div>
+            <div>
+                <img src="./images/qrcode.png" alt="mobile"  style="width: 120px; height: 120px;margin-left: 30px;"/>
+            </div>  
+        </div>
+        
+        <div class="div_conteudos">
+            <div>
+                <ul>
+                    <li class="li_titulo" style="color: black;">Que Somos</li>
+                    <li>Nossa história</li>
+                    <li>Seja uma franqueado</li>
+                </ul>
+            </div>
+            <div>
+                 <ul>
+                    <li  class="li_titulo" style="color: black;">Atendimento ao cliente</li>
+                    <li>Fale conosco</li>
+                    <li>Pesquisa de satisfação</li>
+                </ul>
+            </div>
+            <div>
+               
+                <ul>
+                    <li class="li_titulo" style="color: black;">Termos</li>
+                    <li>Termos de uso</li>
+                    <li>Política de cookies e anúncios</li>
+                    <li>Política de Privacidade</li>
+                    <li>Adendo à Política de Privacidade</li>
+                </ul>
+            </div>
+         
+            <div class="div_rede_sociais">
+                <p style="color: black;font-size: 20px;font-weight: bold;">Siga nas Rede Sociais</p>
+                <img src="" alt="Insta" />
+                <img src="" alt="WhatsApp" />
+                <img src="" alt="Ifood" />
+            </div>
+
+            <div>
+   <!-- <span style="color: rgb(122, 114, 114);"> Telefone para Contato: (11) xxxx-xxxx</span>
+        <span style="color: rgb(122, 114, 114);"> Endereço: Av. Paulista, 2000 - São Paulo</span> -->
+            </div>
+        </div>     
     </div>
 
 </body>
-
 </html>
