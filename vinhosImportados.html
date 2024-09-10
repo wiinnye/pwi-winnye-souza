@@ -9,6 +9,8 @@
     <style>
         * {
             box-sizing: border-box;
+            padding: 0;
+            margin: 0;
         }
 
         body {
@@ -16,7 +18,7 @@
         }
 
         header {
-            background-color: #666;
+            background-color: #4682B4;
             padding: 30px;
             text-align: center;
             font-size: 35px;
@@ -28,9 +30,10 @@
         }
 
         nav {
-            -webkit-flex: 2;
-            -ms-flex: 2;
-            flex: 2;
+            /* -webkit-flex: 4;
+            -ms-flex: 4;
+            flex: 4; */
+            width: 150%;
             background: #ccc;
             padding: 20px;
         }
@@ -46,21 +49,61 @@
             text-decoration: none;
             color: #f1f1f1;
             font-weight: bold;
-        }
-
-        article {
-            -webkit-flex: 3;
-            -ms-flex: 3;
-            flex: 3;
-            background-color: #f1f1f1;
             padding: 10px;
+        }
+        nav li,
+        a:hover {
+            color: #4682B4;
         }
 
         footer {
-            background-color: #ccc;
+            background-color: #4682B4;
             text-align: center;
             color: white;
+            padding: 20px;
         }
+
+        .table_vinho td{
+            padding: 20px;
+        }
+
+        .vinhos_historia{
+            padding: 30px;
+            background-color: #6faada;
+        }
+        .div_rodape{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 30px;
+       }
+       .div_app{
+        display: flex;
+        justify-content: flex-start;
+       }
+       .div_conteudos{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px;
+        background-color: #4682B4;
+       }
+       .div_conteudos ul {
+        list-style: none;
+        text-align: start;
+       }
+       .div_conteudos li {
+        padding: 10px;
+        color: #fff;
+       }
+       .li_titulo{
+        font-size: 20px;
+        font-weight: bold;
+       }
     </style>
 </head>
 
@@ -73,64 +116,135 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Cardapio</a></li>
+                <li><a href="#">Nossa História</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Rede Social</a></li>
             </ul>
         </nav>
+        
+        <section style="display: flex;flex-direction: column;">
+            <article class="vinhos_historia">
+                <h1 style="text-align: center;font-size: 30px;padding: 10px">França</h1>
+                <p>
+                    A França é o mais tradicional produtor de vinhos de qualidade e maior referência em todo o mundo,
+                    produzindo uma grande diversidade de estilos,
+                    que geralmente servem de inspiração para os vinhos criados em todos os cantos do globo. O país oferece
+                    vinhos grandiosos nas mais diversas regiões,
+                    ajudando a definir o conceito de terroir. São vinhos franceses feitos para serem servidos à mesa e os
+                    melhores são capazes de envelhecer por muitos anos.
+                </p>
+            </article>
+            <!-- Tabelas de Vinhos -->
+            <article>
+                <div>
+                <h2 style="text-align: center;font-size: 50px;padding: 50px 0px 50px 0px">Nossa Cartela de Vinho</h2>
+                <table class="table_vinho">
+                    <tr>
+                    <td><img src="/images/CHÂTEAU HAUT-BRION.png" alt="CHÂTEAU HAUT-BRION" style="width: 200px; height: 300px;"/></td>
+                    <td><img src="/images/CHÂTEAU LAFITE ROTHSCHILD.png" alt="CHÂTEAU LAFITE ROTHSCHILD" style="width: 200px; height: 300px;"/></td>
+                    <td><img src="/images/CHÂTEAU LATOUR.png" alt="CHÂTEAU LATOUR" style="width: 200px; height: 300px;"/></td>
+                    <td><img src="/images/CHÂTEAU MARGAUX.png" alt="CHÂTEAU MARGAUX" style="width: 200px; height: 300px;"/></td>
+                    </tr>
+                    <tr>
+                        <th style="width: 10%;font-size: 23px;">CHÂTEAU HAUT-BRION (TINTO)</th>
+                        <th style="width: 10%;font-size: 23px;">CHÂTEAU LAFITE ROTHSCHILD (TINTO)</th>
+                        <th style="width: 10%;font-size: 23px;">CHÂTEAU LATOUR (TINTO)</th>
+                        <th style="width: 10%;font-size: 23px;">CHÂTEAU MARGAUX (TINTO)</th>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;font-size: 12px;">R$19.400,00 (Garrafa) - R$194,40 (Taça) </td>
+                        <td style="font-weight:bold;font-size: 12px;">R$16.990,00 (Garrafa) - R$169,90 (Taça)</td>
+                        <td style="font-weight:bold;font-size: 12px;">R$14.990,00 (Garrafa) - R$149,90 (Taça)</td>
+                        <td style="font-weight:bold;font-size: 12px;">R$20.607,86 (Garrafa) - R$206,86 (Taça)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 12px;">Haut-Brion é uma das mais antigas vinícolas de Bordeaux, com as primeiras referências datando de 1423. Único vinho fora da região de Médoc (fica em Graves), em Bordeaux, classificado como Premier Grand Cru em 1855. Considerado por diversos críticos como o melhor vinho dentre os cinco Premier Cru.</td>
+                        <td style="font-size: 12px;">Classificado como o primeiro dos Premières Grand Crus em 1855, a pequena e elegante vinícola é sinônimo de riqueza, prestígio, história, respeito e é conhecida por produzir vinhos de notável longevidade. Uma garrafa de 1787 deste vinho já foi leiloada por US$ 160 mil.</td>
+                        <td style="font-size: 12px;">Também um Premier Grand Cru, Latour tem o perfil clássico característico dos tintos da região de Pauillac, considerado por muitos o mais potente dos cinco grandes. Uma garrafa magnum da safra de 1961, por exemplo, já foi vendida por US$ 62 mil. Uma curiosidade: por volta do século XVII, Lafite, Mouton e Latour pertenceram a um mesmo dono, o Marquês de Segur, dito "Príncipe dos Vinhos".</td>
+                        <td style="font-size: 12px;">Junto com o Château Lafite, Margaux é o mais estiloso e aristocrático dos Premières Grand Crus. Poderoso e elegante, sua estrutura lhe garante grande longevidade. Gioacchino Rossini, um dos mais famosos compositores italianos de ópera chegou a compor uma canção em homenagem a este vinho.</td>
+                    </tr>
+                </table>
 
-        <article>
-            <h1 style="text-align: center;">França</h1>
-            <p>
-                A França é o mais tradicional produtor de vinhos de qualidade e maior referência em todo o mundo,
-                produzindo uma grande diversidade de estilos,
-                que geralmente servem de inspiração para os vinhos criados em todos os cantos do globo. O país oferece
-                vinhos grandiosos nas mais diversas regiões,
-                ajudando a definir o conceito de terroir. São vinhos franceses feitos para serem servidos à mesa e os
-                melhores são capazes de envelhecer por muitos anos.
-            </p>
+                <table class="table_vinho">
+                    <tr>
+                    <td><img src="/images/MOUTON ROTHSCHILD.png" alt="MOUTON ROTHSCHILD" style="width: 200px; height: 300px;"/></td>
+                    <td><img src="/images/petrus.png" alt="petrus" style="width: 200px; height: 300px;"/></td>
+                    <td><img src="/images/CHÂTEAU CHEVAL BLANC (TINTO).png" alt="CHEVAL BLANC" style="width: 200px; height: 300px;"/></td>
+                    <td><img src="/images/CHÂTEAU D'YQUEM (DOCE).png" alt="D'YQUEM" style="width: 200px; height: 300px;"/></td>
+                    </tr>
+                    <tr>
+                        <th style="width: 10%;font-size: 23px;">CHÂTEAU MOUTON ROTHSCHILD (TINTO)</th>
+                        <th style="width: 10%;font-size: 23px;">CHÂTEAU LA PETRUS (TINTO)</th>
+                        <th style="width: 10%;font-size: 23px;">CHÂTEAU CHEVAL BLANC (TINTO)</th>
+                        <th style="width: 10%;font-size: 23px;">CHÂTEAU D'YQUEM (DOCE)</th>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;font-size: 12px;">R$ 16.990,00 (Garrafa)- R$169,90 (Taça)</td>
+                        <td style="font-weight:bold;font-size: 12px;">R$ 4.990,00 (Garrafa)- R$100,49 (Taça)</td>
+                        <td style="font-weight:bold;font-size: 12px;">R$ 17.900,00 (Garrafa)- R$179,90 (Taça)</td>
+                        <td style="font-weight:bold;font-size: 12px;">R$ 9.709,00 (Garrafa)- R$100,97 (Taça)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 12px;">Desde o fim da II Guerra Mundial, os rótulos desse Premier Grand Cru são marcados por obras originais de artistas contemporâneos, convidados especialmente pela vinícola. Nomes como Salvador Dalí (1958), Joan Miró (1969), Marc Chagall (1970), Pablo Picasso (1973) e Andy Warhol (1975) já adornaram suas garrafas.</td>
+                        <td style="font-size: 12px;">Produzido em Pomerol, o Pétrus é um dos tintos lendários de Bordeaux, ainda que não seja um Premier Grand Cru (não existe classificação oficial para os vinhos do Pomerol). O vinho apresenta potência, volume e taninos firmes, mas elegantes. Ele se tornou especialmente conhecido depois que a Rainha Elizabeth II se encantou com o vinho e ele foi servido em seu casamento e em sua coroação.</td>
+                        <td style="font-size: 12px;">Sem dúvida, um dos mais profundos vinhos de Bordeaux, classificado como Premier Grand Cru Classé A da região de Saint-Émilion. Cepas: Cabernet Franc e Merlot. Ganhou mais notoriedade no filme "Sideways" e também em "Ratatouille". Uma garrafa de 6 litros já foi vendida por mais de US$ 300 mil em leilão recente.</td>
+                        <td style="font-size: 12px;">Indiscutivelmente, o melhor vinho doce da França. Rico, potente e exótico. Celebrado por escritores como Vladmir Nabokov, Fiodor Dostoievski, Marcel Proust, Júlio Verne, Alexandre Dumas Filho etc. Produzido na sub-região de Sauternes, em Bordeaux, as uvas utilizadas na produção desse Premier Cru Supérieur são colhidas seletivamente, por vezes, uma a uma, sendo usadas apenas aquelas afetadas pela Botrytis cinerea. As safras são muito diminutas.</td>
+                    </tr>
+                </table>
+                </div>
+            </article>
 
-        </article>
+        </section>
     </section>
 
-    <section>
-        <article>
-            <h2>Nossa Cartela de Vinho</h2>
-            <table style="margin-left: 5%;">
-                <tr>
-                    <th style="width: 10%;">Ratatouille</th>
-                    <th style="width: 10%;">Confit de pato</th>
-                    <th style="width: 10%;">Foie Gras</th>
-                    <th style="width: 10%;">Coq au vin</th>
-                </tr>
-                <!-- <tr>
-                    <td style="font-weight:bold;">R$100,00</td>
-                    <td style="font-weight:bold;">R$189,00</td>
-                    <td style="font-weight:bold;">R$139,00</td>
-                    <td style="font-weight:bold;">R$209,00</td>
-                </tr> -->
-            </table>
+    <footer class="div_rodape">
+        <div class="div_app">
+                <div>
+                    <h4 style="text-align: start;font-size: 20px;color: #4682B4;">Já baixou nosso APP?</h4>
+                    <p style="text-align: start;color: #4682B4;">Baixe agora lendo o QR code ao lado e tenha acesso a preços e promoções exclusivas.</p>
+                </div>
+                <div>
+                    <img src="./images/qrcode.png" alt="mobile"  style="width: 120px; height: 120px;margin-left: 30px;"/>
+                </div>  
         </div>
-        </article>
+        
+        <div class="div_conteudos">
+                <div>
+                    <ul>
+                        <li class="li_titulo" style="color: black;">Que Somos</li>
+                        <li>Nossa história</li>
+                        <li>Seja uma franqueado</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li  class="li_titulo" style="color: black;">Atendimento ao cliente</li>
+                        <li>Fale conosco</li>
+                        <li>Pesquisa de satisfação</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="li_titulo" style="color: black;">Termos</li>
+                        <li>Termos de uso</li>
+                        <li>Política de cookies e anúncios</li>
+                        <li>Política de Privacidade</li>
+                        <li>Adendo à Política de Privacidade</li>
+                    </ul>
+                </div>
+            
+                <div class="div_rede_sociais">
+                    <p style="color: black;font-size: 20px;font-weight: bold;">Siga nas Rede Sociais</p>
+                    <img src="" alt="Insta" />
+                    <img src="" alt="WhatsApp" />
+                    <img src="" alt="Ifood" />
+                </div>
 
-    </section>
-
-    <footer>
-        <div>
-            <p>Baixe nosso App Bon Appetit, Gustaeu</p>
-            <span style="color: rgb(122, 114, 114);"> Telefone para Contato: (11) xxxx-xxxx</span>
-            </br>
-            <span style="color: rgb(122, 114, 114);"> Endereço: Av. Paulista, 2000 - São Paulo</span>
-            </br>
-            <p>Siga nas Rede Sociais</p>
-            <img src="" alt="Insta" />
-            <img src="" alt="WhatsApp" />
-            <img src="" alt="Ifood" />
-        </div>
-    <br>
-        <div>
-            <span>Desenvolvido por Winnye D. Souza</span>
-            <span>Etec Carmago Aranha</span>
-        </div>
+                <div>
+    <!-- <span style="color: rgb(122, 114, 114);"> Telefone para Contato: (11) xxxx-xxxx</span>
+            <span style="color: rgb(122, 114, 114);"> Endereço: Av. Paulista, 2000 - São Paulo</span> -->
+                </div>
+        </div>    
     </footer>
 
 </body>
