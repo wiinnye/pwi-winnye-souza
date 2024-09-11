@@ -12,11 +12,9 @@
             padding: 0;
             margin: 0;
         }
-
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
         header {
             background-color: #4682B4;
             padding: 30px;
@@ -24,25 +22,18 @@
             font-size: 35px;
             color: white;
         }
-
         section {
             display: flex;
         }
-
         nav {
-            /* -webkit-flex: 4;
-            -ms-flex: 4;
-            flex: 4; */
             width: 150%;
             background: #ccc;
             padding: 20px;
         }
-
         nav ul {
             list-style-type: none;
             padding: 0;
         }
-
         nav li,
         a {
             margin: 10px;
@@ -55,42 +46,34 @@
         a:hover {
             color: #4682B4;
         }
-
-        footer {
-            background-color: #4682B4;
-            text-align: center;
-            color: white;
-            padding: 20px;
-        }
-
         .table_vinho td{
             padding: 20px;
         }
-
+        .table_vinho img:hover{
+            background-color: #f8f1f1;
+            cursor: pointer;
+            
+        }
         .vinhos_historia{
             padding: 30px;
             background-color: #6faada;
         }
         .div_rodape{
+          border-top: 2px solid #ccc;
+        }
+       .div_app{
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #fff;
         padding: 20px;
-        margin-top: 30px;
-       }
-       .div_app{
-        display: flex;
-        justify-content: flex-start;
        }
        .div_conteudos{
-        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        padding: 20px;
         background-color: #4682B4;
+        padding: 10px;
        }
        .div_conteudos ul {
         list-style: none;
@@ -98,11 +81,27 @@
        }
        .div_conteudos li {
         padding: 10px;
-        color: #fff;
+        color: #000;
+        cursor: pointer;
        }
        .li_titulo{
         font-size: 20px;
         font-weight: bold;
+       }
+       .div_rede_sociais{
+        display:flex;
+        flex-direction: column;
+        justify-content:center ;
+        margin-top: 10px;
+       }
+       .div_contatos{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center ;
+        padding: 10px;
+        background-color: #4682B4;
+        color: #fff;
        }
     </style>
 </head>
@@ -140,10 +139,10 @@
                 <h2 style="text-align: center;font-size: 50px;padding: 50px 0px 50px 0px">Nossa Cartela de Vinho</h2>
                 <table class="table_vinho">
                     <tr>
-                    <td><img src="/images/CHÂTEAU HAUT-BRION.png" alt="CHÂTEAU HAUT-BRION" style="width: 200px; height: 300px;"/></td>
-                    <td><img src="/images/CHÂTEAU LAFITE ROTHSCHILD.png" alt="CHÂTEAU LAFITE ROTHSCHILD" style="width: 200px; height: 300px;"/></td>
-                    <td><img src="/images/CHÂTEAU LATOUR.png" alt="CHÂTEAU LATOUR" style="width: 200px; height: 300px;"/></td>
-                    <td><img src="/images/CHÂTEAU MARGAUX.png" alt="CHÂTEAU MARGAUX" style="width: 200px; height: 300px;"/></td>
+                        <th><img src="/images/CHÂTEAU HAUT-BRION.png" alt="CHÂTEAU HAUT-BRION" style="width: 200px; height: 300px;"/></th>
+                        <th><img src="/images/CHÂTEAU LAFITE ROTHSCHILD.png" alt="CHÂTEAU LAFITE ROTHSCHILD" style="width: 200px; height: 300px;"/></th>
+                        <th><img src="/images/CHÂTEAU LATOUR.png" alt="CHÂTEAU LATOUR" style="width: 200px; height: 300px;"/></th>
+                        <th><img src="/images/CHÂTEAU MARGAUX.png" alt="CHÂTEAU MARGAUX" style="width: 200px; height: 300px;"/></th>
                     </tr>
                     <tr>
                         <th style="width: 10%;font-size: 23px;">CHÂTEAU HAUT-BRION (TINTO)</th>
@@ -167,10 +166,10 @@
 
                 <table class="table_vinho">
                     <tr>
-                    <td><img src="/images/MOUTON ROTHSCHILD.png" alt="MOUTON ROTHSCHILD" style="width: 200px; height: 300px;"/></td>
-                    <td><img src="/images/petrus.png" alt="petrus" style="width: 200px; height: 300px;"/></td>
-                    <td><img src="/images/CHÂTEAU CHEVAL BLANC (TINTO).png" alt="CHEVAL BLANC" style="width: 200px; height: 300px;"/></td>
-                    <td><img src="/images/CHÂTEAU D'YQUEM (DOCE).png" alt="D'YQUEM" style="width: 200px; height: 300px;"/></td>
+                    <th><img src="/images/MOUTON ROTHSCHILD.png" alt="MOUTON ROTHSCHILD" style="width: 200px; height: 300px;"/></th>
+                    <th><img src="/images/petrus.png" alt="petrus" style="width: 200px; height: 300px;"/></th>
+                    <th><img src="/images/CHÂTEAU CHEVAL BLANC (TINTO).png" alt="CHEVAL BLANC" style="width: 200px; height: 300px;"/></th>
+                    <th><img src="/images/CHÂTEAU D'YQUEM (DOCE).png" alt="D'YQUEM" style="width: 200px; height: 300px;"/></th>
                     </tr>
                     <tr>
                         <th style="width: 10%;font-size: 23px;">CHÂTEAU MOUTON ROTHSCHILD (TINTO)</th>
@@ -200,8 +199,8 @@
     <footer class="div_rodape">
         <div class="div_app">
                 <div>
-                    <h4 style="text-align: start;font-size: 20px;color: #4682B4;">Já baixou nosso APP?</h4>
-                    <p style="text-align: start;color: #4682B4;">Baixe agora lendo o QR code ao lado e tenha acesso a preços e promoções exclusivas.</p>
+                    <h4 style="text-align: start;font-size: 20px;color: #4682B4;cursor:default;">Já baixou nosso APP?</h4>
+                    <p style="text-align: start;color: #4682B4;cursor:default;">Baixe agora lendo o QR code ao lado e tenha acesso a preços e promoções exclusivas.</p>
                 </div>
                 <div>
                     <img src="./images/qrcode.png" alt="mobile"  style="width: 120px; height: 120px;margin-left: 30px;"/>
@@ -211,21 +210,21 @@
         <div class="div_conteudos">
                 <div>
                     <ul>
-                        <li class="li_titulo" style="color: black;">Que Somos</li>
+                        <li class="li_titulo" style="color: #fff;cursor:default;">Que Somos</li>
                         <li>Nossa história</li>
                         <li>Seja uma franqueado</li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li  class="li_titulo" style="color: black;">Atendimento ao cliente</li>
+                        <li  class="li_titulo" style="color: #fff;cursor:default;">Atendimento ao cliente</li>
                         <li>Fale conosco</li>
                         <li>Pesquisa de satisfação</li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li class="li_titulo" style="color: black;">Termos</li>
+                        <li class="li_titulo" style="color: #fff;cursor:default;">Termos</li>
                         <li>Termos de uso</li>
                         <li>Política de cookies e anúncios</li>
                         <li>Política de Privacidade</li>
@@ -234,17 +233,20 @@
                 </div>
             
                 <div class="div_rede_sociais">
-                    <p style="color: black;font-size: 20px;font-weight: bold;">Siga nas Rede Sociais</p>
-                    <img src="" alt="Insta" />
-                    <img src="" alt="WhatsApp" />
-                    <img src="" alt="Ifood" />
+                    <p style="color: #fff;font-size: 20px;font-weight: bold;cursor:default;">Siga nas Rede Sociais</p>
+                    <div style="padding:20px ;">
+                        <img src="./images/icons8-insta-50.png" alt="Insta" style="width: 60px;" />
+                        <img src="./images/icons8-whatsapp-50.png" alt="WhatsApp"  style="width: 60px;" />
+                        <img src="./images/icons8-ifood-48 (1).png" alt="Ifood"  style="width: 60px;" /> 
+                    </div>
                 </div>
+                
+        </div>  
 
-                <div>
-    <!-- <span style="color: rgb(122, 114, 114);"> Telefone para Contato: (11) xxxx-xxxx</span>
-            <span style="color: rgb(122, 114, 114);"> Endereço: Av. Paulista, 2000 - São Paulo</span> -->
-                </div>
-        </div>    
+        <div class="div_contatos">
+            <span> Telefone para Contato: (11) xxxx-xxxx</span>
+            <span> Endereço: Av. Paulista, 2000 - São Paulo</span>
+        </div> 
     </footer>
 
 </body>

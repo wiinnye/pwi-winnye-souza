@@ -11,6 +11,9 @@
             padding: 0;
             margin: 0;
         }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .div_header{
             display: flex;
             justify-content: center;
@@ -22,9 +25,14 @@
         .menu_header_table{
             width: 100%;
             padding: 20px;
-            color: aliceblue;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
             margin-top: 40px;
             background-color: #4682B4;
+        }
+        .menu_header_table th:hover{
+            color: #B0C4DE;
         }
         .div_historia_restaurante{
             display: flex;
@@ -33,13 +41,15 @@
             align-items: center;
             background-color: #fff;
             padding-bottom: 80px;
-            background-color: LightSteelBlue;
+            background-color: #F5F5F5;
         }
         .div_cardapio{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 30px;
+            margin-top: 30px;
         }
         .div_cardapio table {
             width: 100%;   
@@ -50,31 +60,35 @@
         .div_vinhos{
             display: flex;
             flex-direction: column;
+            padding: 30px;
+            margin-top: 30px;
         }
        .div_unidades{
         display: flex;
         flex-direction: column;
+        padding: 30px;
+        margin-top: 30px;
+        background-color: #B0C4DE;
        }
        .div_rodape{
-        display: flex;
+         display: flex;
         flex-direction: column;
+        background-color: #fff;
+        margin-top: 30px; 
+       }
+       .div_app{
+        display: flex;
         justify-content: center;
         align-items: center;
         background-color: #fff;
         padding: 20px;
-        margin-top: 30px;
-       }
-       .div_app{
-        display: flex;
-        justify-content: flex-start;
        }
        .div_conteudos{
-        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        padding: 20px;
         background-color: #4682B4;
+        padding: 10px;
        }
        .div_conteudos ul {
         list-style: none;
@@ -82,21 +96,38 @@
        }
        .div_conteudos li {
         padding: 10px;
-        color: #fff;
+        color: #000;
+        cursor: pointer;
        }
        .li_titulo{
         font-size: 20px;
         font-weight: bold;
        }
+       .div_rede_sociais{
+        display:flex;
+        flex-direction: column;
+        justify-content:center ;
+        margin-top: 10px;
+       }
+       .div_contatos{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center ;
+        padding: 10px;
+        background-color: #4682B4;
+        color: #fff;
+       }
     </style>
 </head>
 
-<body style="background-color: #F0F8FF; text-align: center;">
+<body style="background-color: #FFFAFA; text-align: center;">
     <!-- Menu -->
     <div class="div_header">
         <img src="/images/logoRestaurante.png" alt="logo do restaurante" style="width: 80px; height: 80px;border-radius:50%;">
         <h1 style="color: rgb(23, 23, 24);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 30px;padding-left: 29px;">  Bon Appétit, <sup>Gusteau</sup>!</h1>        
     </div>
+    
     <div class="menu_header">
         <table class="menu_header_table">
             <tr>
@@ -129,7 +160,7 @@
     </div>
 
     <!-- Cardapio -->
-    <div >
+    <div style="padding: 30px;margin-top: 30px;">
         <h3 style="font-size: 90px;">
             Nosso Cardápio
         </h3>
@@ -266,53 +297,55 @@
     <!-- Rodape -->
     <div class="div_rodape">
         <div class="div_app">
-            <div>
-                <h4 style="text-align: start;font-size: 20px;color: #4682B4;">Já baixou nosso APP?</h4>
-                <p>Baixe agora lendo o QR code ao lado e tenha acesso a preços e promoções exclusivas.</p>
-            </div>
-            <div>
-                <img src="./images/qrcode.png" alt="mobile"  style="width: 120px; height: 120px;margin-left: 30px;"/>
-            </div>  
+                <div>
+                    <h4 style="text-align: start;font-size: 20px;color: #4682B4;cursor:default;">Já baixou nosso APP?</h4>
+                    <p style="text-align: start;color: #4682B4;cursor:default;">Baixe agora lendo o QR code ao lado e tenha acesso a preços e promoções exclusivas.</p>
+                </div>
+                <div>
+                    <img src="./images/qrcode.png" alt="mobile"  style="width: 120px; height: 120px;margin-left: 30px;"/>
+                </div>  
         </div>
         
         <div class="div_conteudos">
-            <div>
-                <ul>
-                    <li class="li_titulo" style="color: black;">Que Somos</li>
-                    <li>Nossa história</li>
-                    <li>Seja uma franqueado</li>
-                </ul>
-            </div>
-            <div>
-                 <ul>
-                    <li  class="li_titulo" style="color: black;">Atendimento ao cliente</li>
-                    <li>Fale conosco</li>
-                    <li>Pesquisa de satisfação</li>
-                </ul>
-            </div>
-            <div>
-               
-                <ul>
-                    <li class="li_titulo" style="color: black;">Termos</li>
-                    <li>Termos de uso</li>
-                    <li>Política de cookies e anúncios</li>
-                    <li>Política de Privacidade</li>
-                    <li>Adendo à Política de Privacidade</li>
-                </ul>
-            </div>
-         
-            <div class="div_rede_sociais">
-                <p style="color: black;font-size: 20px;font-weight: bold;">Siga nas Rede Sociais</p>
-                <img src="" alt="Insta" />
-                <img src="" alt="WhatsApp" />
-                <img src="" alt="Ifood" />
-            </div>
+                <div>
+                    <ul>
+                        <li class="li_titulo" style="color: #fff;cursor:default;">Que Somos</li>
+                        <li>Nossa história</li>
+                        <li>Seja uma franqueado</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li  class="li_titulo" style="color: #fff;cursor:default;">Atendimento ao cliente</li>
+                        <li>Fale conosco</li>
+                        <li>Pesquisa de satisfação</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="li_titulo" style="color: #fff;cursor:default;">Termos</li>
+                        <li>Termos de uso</li>
+                        <li>Política de cookies e anúncios</li>
+                        <li>Política de Privacidade</li>
+                        <li>Adendo à Política de Privacidade</li>
+                    </ul>
+                </div>
+            
+                <div class="div_rede_sociais">
+                    <p style="color: #fff;font-size: 20px;font-weight: bold;cursor:default;">Siga nas Rede Sociais</p>
+                    <div style="padding:20px ;">
+                        <img src="./images/icons8-insta-50.png" alt="Insta" style="width: 60px;" />
+                        <img src="./images/icons8-whatsapp-50.png" alt="WhatsApp"  style="width: 60px;" />
+                        <img src="./images/icons8-ifood-48 (1).png" alt="Ifood"  style="width: 60px;" /> 
+                    </div>
+                </div>
+                
+        </div>  
 
-            <div>
-   <!-- <span style="color: rgb(122, 114, 114);"> Telefone para Contato: (11) xxxx-xxxx</span>
-        <span style="color: rgb(122, 114, 114);"> Endereço: Av. Paulista, 2000 - São Paulo</span> -->
-            </div>
-        </div>     
+        <div class="div_contatos">
+            <span> Telefone para Contato: (11) xxxx-xxxx</span>
+            <span> Endereço: Av. Paulista, 2000 - São Paulo</span>
+        </div> 
     </div>
 
 </body>
