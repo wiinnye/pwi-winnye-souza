@@ -1,0 +1,58 @@
+body{
+  height: 1000vh;
+}
+s
+#overflowTest {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 50%;
+    height: 100px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+}
+
+#overflowHidden {
+    background: #5200f5;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+#overflowVisible {
+    background: #b2bef0;
+    color: rgb(33, 167, 115);
+    padding: 15px;
+    width: 60%;
+    height: 100px;
+    overflow: visible;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+#overflowY {
+  background: #b2bef0;
+  color: rgb(255, 0, 93);
+  padding: 15px;
+  width: 40%;
+  height: 100px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  margin-top: 220px;
+}
+
+#overflowX {
+  background: #b2bef0;
+  color: rgb(255, 0, 93);
+  padding: 15px;
+  width: 100px;
+  height: 50px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+}
