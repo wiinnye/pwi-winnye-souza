@@ -2,12 +2,16 @@
     padding: 0;
     margin: 0;
 }
+html, body{
+    height: 100%;
+}
 
 .div_container {
     display: flex;
+    height: 100%;
     flex-direction: column;
-    margin-top: 30px;
-    padding: 10px;
+    justify-content: space-around;
+    background-color: #E88310;
 }
 
 .div_perfil {
@@ -21,7 +25,9 @@
 img {
     float: left;
     width: 220px;
+    height: 200px;
     border: 2px solid black;
+    border-radius: 50%;
 }
 
 .perfil {
@@ -31,6 +37,12 @@ img {
 
 .perfil h2 {
     font-size: 33px;
+    color: #E8BB10;
+}
+
+.perfil h3 {
+    color: #000;
+    margin-top: 10px;
 }
 
 .objetivos {
@@ -39,7 +51,11 @@ img {
 }
 
 .objetivos h3 {
+    font-size: 28px;
     text-align: center;
+    background-color: #E85E10 ;
+    color: #fff;
+    padding: 20px;
 }
 
 .objetivos ul {
